@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joanna Perdomo · Content Strategist & Analyst</title>
+  <meta name="description" content="Portafolio y CV de Joanna Perdomo, estratega de contenido y analista con mentalidad de marketing lead en CDMX." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main"><span lang="es">Saltar al contenido</span><span lang="en">Skip to content</span></a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="wordmark" aria-label="Joanna Perdomo">
+        <span class="wordmark-name">Joanna Perdomo</span>
+      </a>
+      <nav class="site-nav" aria-label="Principal">
+        <a href="#portafolio"><span lang="es">Portafolio</span><span lang="en">Portfolio</span></a>
+        <a href="#cv"><span lang="es">CV</span><span lang="en">CV</span></a>
+        <a href="#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a>
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch to English">
+          <span class="lang-current" aria-hidden="true">ES</span>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <span class="lang-other" aria-hidden="true">EN</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow reveal"><span lang="es">Ciudad de México</span><span lang="en">Mexico City</span> · ES / EN / FR / JP</p>
+          <h1 class="hero-name reveal">Joanna Perdomo</h1>
+          <p class="hero-title reveal"><span class="serif-it">Content Strategist</span><span class="mono-slash"> / Analyst</span></p>
+          <p class="hero-lede reveal">
+            <span lang="es">Estratega de contenido y analista con mentalidad de marketing lead: estrategia de marca, campañas multicanal y la operación que las sostiene.</span>
+            <span lang="en">Content strategist and analyst with a marketing-lead mindset: brand strategy, multichannel campaigns, and the operations behind them.</span>
+          </p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#portafolio"><span lang="es">Ver portafolio</span><span lang="en">View portfolio</span></a>
+            <a class="btn btn-ghost" href="#cv"><span lang="es">Ver CV</span><span lang="en">View CV</span></a>
+          </div>
+        </div>
+        <div class="hero-media reveal">
+          <figure class="portrait">
+            <img src="assets/joanna.jpg" alt="Joanna Perdomo" onerror="this.classList.add('is-missing')" />
+            <span class="portrait-fallback" aria-hidden="true">JP</span>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO (primero) ===================== -->
+    <section id="portafolio" class="portfolio">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-eyebrow"><span lang="es">Portafolio</span><span lang="en">Portfolio</span></p>
+          <h2 class="section-title"><span lang="es">Trabajo seleccionado</span><span lang="en">Selected work</span></h2>
+          <p class="section-intro">
+            <span lang="es">Blogs, prensa, publicaciones y piezas creativas. Separadas por tipo.</span>
+            <span lang="en">Blogs, press, posts, and creative pieces. Sorted by type.</span>
+          </p>
+        </header>
+
+        <div class="tab-bar reveal" role="tablist" aria-label="Tipo de trabajo">
+          <button class="tab is-active" role="tab" type="button" data-tab="escrito" aria-selected="true" aria-controls="card-grid">
+            <span lang="es">Escrito</span><span lang="en">Written</span>
+          </button>
+          <button class="tab" role="tab" type="button" data-tab="creativo" aria-selected="false" aria-controls="card-grid">
+            <span lang="es">Creativo</span><span lang="en">Creative</span>
+          </button>
+        </div>
+
+        <div class="brand-bar reveal" role="group" aria-label="Filtrar por marca">
+          <span class="brand-label" aria-hidden="true"><span lang="es">Marca</span><span lang="en">Brand</span></span>
+          <div class="brand-chips" id="brand-chips"></div>
+        </div>
+
+        <div class="card-grid" id="card-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ===================== CV (después) ===================== -->
+    <section id="cv" class="cv">
+      <div class="container">
+        <header class="section-head section-head--cv reveal">
+          <div class="section-head-text">
+            <p class="section-eyebrow">CV</p>
+            <h2 class="section-title"><span lang="es">Trayectoria</span><span lang="en">Experience</span></h2>
+            <p class="section-intro">
+              <span lang="es">Casi una década de contenido. El mismo trabajo, leído a través de tres lentes.</span>
+              <span lang="en">Nearly a decade of content. The same work, read through three lenses.</span>
+            </p>
+          </div>
+          <a class="btn btn-download" href="assets/CV_Joanna_Perdomo.pdf" download target="_blank">
+            <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="M7 11l5 5 5-5" /><path d="M5 21h14" /></svg>
+            <span lang="es">Descargar CV (PDF)</span><span lang="en">Download CV (PDF)</span>
+          </a>
+        </header>
+
+        <!-- Marketing lead band -->
+        <div class="mkt-lead reveal">
+          <div class="mkt-lead-head">
+            <p class="section-eyebrow"><span lang="es">Como marketing lead</span><span lang="en">As a marketing lead</span></p>
+            <p class="mkt-lead-intro"><span lang="es">Lo que ya hago hoy, en lenguaje de dirección.</span><span lang="en">What I already do today, in leadership terms.</span></p>
+          </div>
+          <ul class="mkt-grid">
+            <li class="mkt-card">
+              <h3><span lang="es">Estrategia y posicionamiento de marca</span><span lang="en">Brand strategy &amp; positioning</span></h3>
+              <p><span lang="es">Dirijo el posicionamiento de Blip LATAM en todos los canales digitales.</span><span lang="en">I lead Blip LATAM's positioning across every digital channel.</span></p>
+            </li>
+
+            <li class="mkt-card">
+              <h3><span lang="es">Campañas multicanal y paid media</span><span lang="en">Multichannel &amp; paid media</span></h3>
+              <p><span lang="es">Campañas de paid media y social para Prime Video en México, LATAM y Japón.</span><span lang="en">Paid media and social campaigns for Prime Video across Mexico, LATAM, and Japan.</span></p>
+            </li>
+            <li class="mkt-card">
+              <h3><span lang="es">Operación de contenido a escala</span><span lang="en">Content operations at scale</span></h3>
+              <p><span lang="es">Sistema de gestión en Notion y publicación continua en WordPress.</span><span lang="en">A Notion management system and continuous WordPress publishing.</span></p>
+            </li>
+            <li class="mkt-card">
+              <h3><span lang="es">De los datos a la decisión</span><span lang="en">Data into decisions</span></h3>
+              <p><span lang="es">Reportes accionables de performance con Power BI y Looker Studio.</span><span lang="en">Actionable performance reports with Power BI and Looker Studio.</span></p>
+            </li>
+            <li class="mkt-card">
+              <h3><span lang="es">Liderazgo cross-funcional</span><span lang="en">Cross-functional leadership</span></h3>
+              <p><span lang="es">Punto de contacto con la agencia y enlace con el equipo global de Brasil.</span><span lang="en">Agency point of contact and liaison with the global Brazil team.</span></p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Lens filter -->
+        <div class="lens-bar reveal" role="group" aria-label="Filtrar por competencia">
+          <button class="lens-pill is-active" type="button" data-lens="all" aria-pressed="true">
+            <span lang="es">Todo</span><span lang="en">All</span>
+          </button>
+          <button class="lens-pill" type="button" data-lens="marketing" aria-pressed="false">Marketing</button>
+          <button class="lens-pill" type="button" data-lens="content" aria-pressed="false">Content</button>
+          <button class="lens-pill" type="button" data-lens="pm" aria-pressed="false">Project Management</button>
+        </div>
+        <p class="lens-note reveal"><span lang="es">Marketing es el hilo conductor; Content y Project Management son los dos motores que lo sostienen.</span><span lang="en">Marketing is the through-line; Content and Project Management are the two engines behind it.</span></p>
+
+        <ol class="timeline" id="timeline">
+          <li class="tl-entry reveal">
+            <div class="tl-meta">
+              <span class="tl-date">2025 — <span lang="es">Presente</span><span lang="en">Present</span></span>
+              <span class="tl-place">Blip · <span lang="es">Ciudad de México</span><span lang="en">Mexico City</span></span>
+            </div>
+            <div class="tl-body">
+              <h3 class="tl-role">Content &amp; Communications Lead</h3>
+              <ul class="tl-points">
+                <li data-lens="content marketing"><span lang="es">Dirijo la estrategia de contenido de Blip LATAM en todos los canales digitales (paid media, blog, redes y mailing), alineada al posicionamiento regional de la marca.</span><span lang="en">I lead Blip LATAM's content strategy across every digital channel (paid media, blog, social, and email), aligned with the brand's regional positioning.</span></li>
+                <li data-lens="content marketing"><span lang="es">Produzco proyectos de video para Blip LATAM: entrevistas con stakeholders, podcast con clientes y aliados, e iniciativas de liderazgo de pensamiento.</span><span lang="en">I produce video projects for Blip LATAM: stakeholder interviews, client and partner podcasts, and thought-leadership initiatives.</span></li>
+                <li data-lens="pm"><span lang="es">Soy dueña del sistema de gestión de proyectos del equipo de contenido, construido desde cero en Notion, del diseño del flujo al seguimiento de la ejecución.</span><span lang="en">I own the content team's project management system, built from scratch in Notion, from workflow design to execution tracking.</span></li>
+                <li data-lens="pm marketing"><span lang="es">Gestiono todas las iniciativas de contenido, con control de tiempos, entregables y coordinación del equipo.</span><span lang="en">I manage every content initiative, overseeing timelines, deliverables, and team coordination.</span></li>
+                <li data-lens="pm marketing"><span lang="es">Soy el punto de contacto principal con la agencia de marketing externa: briefings, planeación y ciclos de producción.</span><span lang="en">I am the main point of contact for the external marketing agency: briefings, planning, and production cycles.</span></li>
+                <li data-lens="pm content"><span lang="es">Hago de enlace con el equipo de Brasil de Blip para adaptar el contenido global a LATAM sin perder consistencia de marca.</span><span lang="en">I liaise with Blip's Brazil team to adapt global content for LATAM while keeping brand consistency.</span></li>
+                <li data-lens="pm content"><span lang="es">Administro la plataforma WordPress de todo el contenido publicado en el sitio.</span><span lang="en">I manage the WordPress platform for all content published on the website.</span></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-entry reveal">
+            <div class="tl-meta">
+              <span class="tl-date">2021 — 2025</span>
+              <span class="tl-place">Online Ventures C. A. · <span lang="es">Ciudad de México</span><span lang="en">Mexico City</span></span>
+            </div>
+            <div class="tl-body">
+              <h3 class="tl-role"><span lang="es">Senior Content Specialist &amp; Analyst para Amazon Prime Video</span><span lang="en">Senior Content Specialist &amp; Analyst for Amazon Prime Video</span></h3>
+              <ul class="tl-points">
+                <li data-lens="marketing content"><span lang="es">Gestioné campañas de social media marketing para Amazon Prime Video México y LATAM, adaptando conceptos creativos a contenido específico por plataforma.</span><span lang="en">I managed social media marketing campaigns for Amazon Prime Video Mexico and LATAM, adapting creative concepts into platform-specific content.</span></li>
+                <li data-lens="marketing pm"><span lang="es">Lideré un proyecto de paid media de un año para Prime Video Japón, convirtiendo los datos de desempeño en reportes accionables para el equipo de contenido japonés.</span><span lang="en">I led a year-long paid media project for Prime Video Japan, translating performance data into actionable reports for the Japanese content team.</span></li>
+                <li data-lens="marketing pm"><span lang="es">Dirigí un equipo cross-funcional en la ejecución de estrategias de paid media para los nuevos perfiles sociales de Prime Video Japón, con monitoreo de métricas e insights accionables.</span><span lang="en">I led a cross-functional team executing paid media strategies for Prime Video Japan's newly launched social handles, with metric monitoring and actionable insights.</span></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-entry reveal">
+            <div class="tl-meta">
+              <span class="tl-date">2022 — 2023</span>
+              <span class="tl-place">Learning Technologies Group C. A. · <span lang="es">Remoto</span><span lang="en">Remote</span></span>
+            </div>
+            <div class="tl-body">
+              <h3 class="tl-role">Content Writer</h3>
+              <ul class="tl-points">
+                <li data-lens="content marketing"><span lang="es">Escribí press releases, blog posts orientados a keywords, landing pages, eBooks y copy para redes de las marcas Open LMS y VectorVMS.</span><span lang="en">I wrote press releases, keyword-targeted blog posts, landing pages, eBooks, and social copy for the Open LMS and VectorVMS brands.</span></li>
+                <li data-lens="content marketing pm"><span lang="es">Administré el CMS de Open LMS y el WordPress de VectorVMS, con publicación semanal y auditoría de contenido para optimizar piezas de bajo rendimiento en SEO.</span><span lang="en">I managed Open LMS's CMS and VectorVMS's WordPress, publishing weekly and auditing content to optimize low-performing pieces for SEO.</span></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-entry reveal">
+            <div class="tl-meta">
+              <span class="tl-date">2020 — 2021</span>
+              <span class="tl-place">Wizeline · <span lang="es">Ciudad de México</span><span lang="en">Mexico City</span></span>
+            </div>
+            <div class="tl-body">
+              <h3 class="tl-role">Technical Content Writer</h3>
+              <ul class="tl-points">
+                <li data-lens="content"><span lang="es">Creé guías para desarrolladores, usuarios, administradores y de inicio para proyectos de software, acelerando el onboarding y mejorando la comunicación del equipo.</span><span lang="en">I created developer, user, admin, and starter guides for software projects, speeding up onboarding and improving team communication.</span></li>
+                <li data-lens="content"><span lang="es">Colaboré como UX writer para una comunicación clara y consistente en todo el proyecto.</span><span lang="en">I contributed as a UX writer for clear, consistent communication across the project.</span></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-entry reveal">
+            <div class="tl-meta">
+              <span class="tl-date">2018 — 2020</span>
+              <span class="tl-place">Gelattina · <span lang="es">Ciudad de México</span><span lang="en">Mexico City</span></span>
+            </div>
+            <div class="tl-body">
+              <h3 class="tl-role">Content Specialist</h3>
+              <ul class="tl-points">
+                <li data-lens="marketing content"><span lang="es">Desarrollé estrategias de social media y contenido para Telcel, con campañas para juegos de Supercell, el Maratón Telcel CDMX, promociones de temporada y lanzamientos de celulares.</span><span lang="en">I developed social media and content strategies for Telcel, supporting campaigns for Supercell games, the Mexico City Telcel Marathon, seasonal promotions, and phone launches.</span></li>
+                <li data-lens="content pm marketing"><span lang="es">Lideré la producción de contenido para coberturas en vivo, capturando y publicando video e imágenes en tiempo real en las plataformas de Telcel.</span><span lang="en">I led content production for live event coverage, capturing and posting real-time video and images across Telcel's platforms.</span></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-entry reveal">
+            <div class="tl-meta">
+              <span class="tl-date">2017 — 2018</span>
+              <span class="tl-place">WebFindYou · <span lang="es">Venezuela</span><span lang="en">Venezuela</span></span>
+            </div>
+            <div class="tl-body">
+              <h3 class="tl-role">Content Writer</h3>
+              <ul class="tl-points">
+                <li data-lens="content marketing"><span lang="es">Escribí blog posts optimizados para SEO y contenido web para clientes de Colombia, Chile, Estados Unidos y Venezuela: landing pages, páginas de producto, newsletters, copy publicitario, eBooks y blogs.</span><span lang="en">I wrote SEO-optimized blog posts and web content for clients in Colombia, Chile, the USA, and Venezuela: landing pages, product pages, newsletters, ad copy, eBooks, and blogs.</span></li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+
+        <!-- Skills + education -->
+        <div class="cv-grid">
+          <div class="cv-card reveal">
+            <h3 class="cv-card-title"><span lang="es">Datos</span><span lang="en">Data</span></h3>
+            <ul class="tag-list">
+              <li>Excel</li><li>Power BI</li><li>Looker Studio</li>
+            </ul>
+          </div>
+          <div class="cv-card reveal">
+            <h3 class="cv-card-title">Marketing</h3>
+            <ul class="tag-list">
+              <li>Sprinklr</li><li>ListenFirst</li><li>Meltwater</li><li>WordPress</li><li>Mailchimp</li>
+            </ul>
+          </div>
+          <div class="cv-card reveal">
+            <h3 class="cv-card-title">Project Management</h3>
+            <ul class="tag-list">
+              <li>Airtable</li><li>Notion</li><li>Teamwork</li><li>ClickUp</li><li>Trello</li>
+            </ul>
+          </div>
+          <div class="cv-card reveal">
+            <h3 class="cv-card-title"><span lang="es">Otras</span><span lang="en">Other</span></h3>
+            <ul class="tag-list">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Figma</li>
+            </ul>
+          </div>
+          <div class="cv-card reveal">
+            <h3 class="cv-card-title"><span lang="es">Idiomas</span><span lang="en">Languages</span></h3>
+            <ul class="lang-list">
+              <li><span lang="es">Español</span><span lang="en">Spanish</span> <em>· <span lang="es">Nativo</span><span lang="en">Native</span></em></li>
+              <li><span lang="es">Inglés</span><span lang="en">English</span> <em>· C2</em></li>
+              <li><span lang="es">Francés</span><span lang="en">French</span> <em>· C1</em></li>
+              <li><span lang="es">Japonés</span><span lang="en">Japanese</span> <em>· B1</em></li>
+            </ul>
+          </div>
+          <div class="cv-card reveal">
+            <h3 class="cv-card-title"><span lang="es">Formación</span><span lang="en">Education</span></h3>
+            <ul class="edu-list">
+              <li><strong><span lang="es">Comunicación Social</span><span lang="en">Social Communication</span></strong><span class="edu-meta">Universidad del Zulia · 2011–2016</span></li>
+              <li><strong>Web Development</strong><span class="edu-meta">Coderhouse · 2023</span></li>
+              <li><strong>Data Analytics Certificate</strong><span class="edu-meta">Google · <span lang="es">En curso</span><span lang="en">In progress</span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== CONTACT ===================== -->
+  <footer id="contacto" class="contact">
+    <div class="container contact-inner">
+      <div class="contact-lead">
+        <p class="section-eyebrow inverse"><span lang="es">Contacto</span><span lang="en">Contact</span></p>
+        <h2 class="contact-title"><span lang="es">Hablemos.</span><span lang="en">Let's talk.</span></h2>
+      </div>
+      <ul class="contact-links">
+        <li><a href="mailto:joannaperdomo27@gmail.com">joannaperdomo27@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/jperdomo27" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><span class="contact-loc"><span lang="es">Ciudad de México</span><span lang="en">Mexico City</span></span></li>
+      </ul>
+    </div>
+    <div class="container contact-foot">
+      <span>© <span id="year"></span> Joanna Perdomo</span>
+      <a href="#top"><span lang="es">Volver arriba</span><span lang="en">Back to top</span></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
