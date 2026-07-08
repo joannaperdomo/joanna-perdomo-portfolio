@@ -148,7 +148,7 @@ html[data-lang="en"] [lang="es"] { display: none; }
 /* =========================================================
    Secciones genéricas
    ========================================================= */
-.cv, .portfolio { padding-block: clamp(3rem, 8vh, 5.5rem); }
+.cv, .portfolio { }
 .section-head { max-width: 52ch; margin-bottom: 2.6rem; }
 .section-eyebrow {
   font-family: var(--font-mono); font-size: .78rem; letter-spacing: .1em;
@@ -363,3 +363,24 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 .cred-link:hover { border-bottom-color: var(--accent-2); }
 .cred-sublabel { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 1.3rem 0 0; }
 .cred-list--sub { margin-top: .5rem; }
+
+/* =========================================================
+   Botón flotante "volver arriba"
+   ========================================================= */
+.back-to-top {
+  position: fixed; right: clamp(1rem, 3vw, 2rem); bottom: clamp(1rem, 3vw, 2rem);
+  z-index: 60; display: grid; place-items: center;
+  width: 44px; height: 44px; border-radius: 50%; cursor: pointer;
+  background: var(--accent); color: var(--white); border: none;
+  box-shadow: 0 4px 16px rgba(40, 75, 99, .22);
+  opacity: 0; visibility: hidden; transform: translateY(10px);
+  transition: opacity .25s ease, transform .25s ease, visibility .25s ease, background .2s ease;
+}
+.back-to-top.is-visible { opacity: 1; visibility: visible; transform: none; }
+.back-to-top:hover { background: var(--accent-2); }
+.back-to-top:active { transform: translateY(1px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top { transition: opacity .25s ease, visibility .25s ease; transform: none; }
+  .back-to-top.is-visible { transform: none; }
+}

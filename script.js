@@ -589,3 +589,20 @@ function renderCards() {
    6) AÑO EN EL FOOTER
    --------------------------------------------------------- */
 document.getElementById("year").textContent = new Date().getFullYear();
+
+/* ---------------------------------------------------------
+   Botón flotante "volver arriba"
+   --------------------------------------------------------- */
+(function initBackToTop() {
+  const btn = document.getElementById("back-to-top");
+  if (!btn) return;
+
+  const onScroll = () => btn.classList.toggle("is-visible", window.scrollY > 600);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  btn.addEventListener("click", () => {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+  });
+})();
