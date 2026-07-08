@@ -155,6 +155,7 @@ const PORTFOLIO = [
     category: "Social media",
     brand: "Amazon Prime Video",
     language: "Spanish",
+    featured: true,
     img: "assets/portafolio-referencias/falloout.jpg",
     url: "https://www.instagram.com/p/C6HCO_utPmT/?img_index=1",
     title: { es: "Fallout, temporada 1", en: "Fallout, season 1" },
@@ -169,6 +170,7 @@ const PORTFOLIO = [
     brand: "Amazon Prime Video",
     language: "Spanish",
     img: "assets/portafolio-referencias/ringsofpower.jpg",
+    featured: true,
     url: "https://www.instagram.com/p/DAcb1FaPI8Z",
     title: { es: "Anillos de poder, temporada 2", en: "Rings of Power, season 2" },
     desc: {
@@ -222,6 +224,7 @@ const PORTFOLIO = [
     language: "Spanish",
     img: "assets/portafolio-referencias/blipnewoffices.png",
     url: "https://www.instagram.com/p/DNOmbyMx0U3/",
+    featured: true,
     title: { es: "Nuevas oficinas en Blip México", en: "New offices at Blip Mexico" },
     desc: {
       es: "Video que produje para las redes sociales de Blip",
@@ -233,6 +236,7 @@ const PORTFOLIO = [
     category: "Social media",
     brand: "Blip",
     language: "Spanish",
+    featured: true,
     img: "assets/portafolio-referencias/blipeventrecap.png",
     url: "https://www.instagram.com/p/DPMOQYgkWHR/",
     title: { es: "Recap de evento de Blip México", en: "Blip event video recap" },
@@ -359,6 +363,20 @@ const PORTFOLIO = [
     desc: {
       es: "Más de 400 millones de personas hablan el idioma con el cual escribo estas palabras...",
       en: "More than 400 million people speak the language in which I am writing these words."
+    }
+  },
+  {
+    type: "creativo",
+    category: "Social media",
+    brand: "Blip",
+    language: "Spanish",
+    featured: true,
+    img: "assets/portafolio-referencias/maxikash.png",
+    url: "https://www.youtube.com/watch?v=Z01fPaOq0EY",
+    title: { es: "Casos de éxito con Blip", en: "Success Stories with Blip" },
+    desc: {
+      es: "Maxikash automatizó su servicio de atención al cliente con IA en solo 2 meses | Blip Voices",
+      en: "How Maxikash automated their customer support service with AI in only two months | Blip Voices"
     }
   },
 ];
